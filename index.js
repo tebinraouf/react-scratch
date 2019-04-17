@@ -1,9 +1,3 @@
-import path from "path";
-
-const log = (string) => {
-    console.log(string);
-}
-
-// console.log("hello");
+import log from "./log"
 
 log("Hello");
