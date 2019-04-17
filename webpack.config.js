@@ -1,5 +1,5 @@
 const path = require("path");
-const webpack =  require("webpack");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 
@@ -12,12 +12,13 @@ module.exports = {
     },
     mode: 'development',
     module: {
-        rules: [
-            {
-                test: /\.js$/,
-                loader: "babel-loader"
-            }
-        ]
+        rules: [{
+            test: /\.js$/,
+            loader: "babel-loader"
+        }, {
+            test: /\.(jpeg|png|gif|jpg)$/,
+            loader: "file-loader"
+        }]
     },
     plugins: [
         new HtmlWebpackPlugin({
