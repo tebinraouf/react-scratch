@@ -1,6 +1,7 @@
-const path = require("path");
+const path = require('path');
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 require("dotenv").config();
@@ -12,7 +13,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: './bundle.js'
     },
-    mode: 'development',
     module: {
         rules: [
             {
@@ -39,6 +39,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './index.html',
             inject: 'body'
@@ -51,5 +52,4 @@ module.exports = {
             chunkFilename: '[id].css'
         })
     ]
-}
-
+};
