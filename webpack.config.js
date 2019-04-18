@@ -13,13 +13,20 @@ module.exports = {
     },
     mode: 'development',
     module: {
-        rules: [{
-            test: /\.js$/,
-            loader: "babel-loader"
-        }, {
-            test: /\.(jpeg|png|gif|jpg)$/,
-            loader: "file-loader"
-        }]
+        rules: [
+            {
+                test: /\.js$/,
+                loader: "babel-loader"
+            }, 
+            {
+                test: /\.(jpeg|png|gif|jpg)$/,
+                loader: "file-loader"
+            },
+            {
+                test: /\.css$/,
+                loader: ['style-loader', 'css-loader'],
+            }
+        ]
     },
     plugins: [
         new HtmlWebpackPlugin({

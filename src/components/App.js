@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Toronto from "../static/images/toronto.jpg";
+import "../static/styles/style.css";
 
 //Class Component
 // class App extends Component {
