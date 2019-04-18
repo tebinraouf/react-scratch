@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Toronto from "./static/images/toronto.jpg";
+import Toronto from "../static/images/toronto.jpg";
 
 //Class Component
 // class App extends Component {
@@ -11,12 +11,15 @@ import Toronto from "./static/images/toronto.jpg";
 // }
 // export default App; 
 
+fetch(`${API_URL}toronto`)
+.then(result=>result.json())
+.then(json => console.log(json));
+
 //functional component
-export const App = () => (
+const App = () => (
     <div>
         <h1>Hello Universe!</h1>
         <img src={Toronto} width="200"/>
     </div>
 )
-
-// export default App;
+export default App;
