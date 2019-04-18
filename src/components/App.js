@@ -2,6 +2,9 @@ import React, {Component} from "react";
 import Toronto from "../static/images/toronto.jpg";
 import "../static/styles/app.css";
 
+console.log(process.env.NODE_ENV);
+
+
 //Class Component
 // class App extends Component {
 //     render() {
