@@ -1,0 +1,28 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "globals": {
+        "API_URL": true
+    },
+    "rules": {
+        "indent": ["error", "tab"],
+        "semi": [2, "always"],
+        "eol-last": ["error", "never"],
+        "no-tabs": ["error", {
+            "allowIndentationTabs": true
+        }],
+        "quotes": ["error", "double"]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
