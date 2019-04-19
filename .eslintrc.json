@@ -19,7 +19,8 @@
         "no-tabs": ["error", {
             "allowIndentationTabs": true
         }],
-        "quotes": ["error", "double"]
+        "quotes": ["error", "double"],
+        "react/prop-types": 0
     },
     "settings": {
         "react": {

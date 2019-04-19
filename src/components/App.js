@@ -1,18 +1,26 @@
 import React from "react";
-import Toronto from "../static/images/toronto.jpg";
-import "../static/styles/app.css";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import Header from "./Header";
+import Home from "./Home";
+import About from "./About";
+import Movie from "./Movie";
+import NotFound from "./NotFound";
 
-console.log(process.env.NODE_ENV);
-
-fetch(`${API_URL}toronto`)
-	.then(result => result.json())
-	.then(json => console.log(json));
-
-// functional component
 const App = () => (
 	<div>
-		<h1>Hello Universe!</h1>
-		<img src={Toronto} width="200"/>
+		<BrowserRouter>
+			<main>
+				<Header />
+				<Switch>
+					<Redirect from="/home" to="/" />
+					<Route exact path="/" component={Home} />
+					<Route path="/about" component={About} />
+					<Route path="/movie/:id" component={Movie} />
+					<Route component={NotFound} />
+				</Switch>
+			</main>
+		</BrowserRouter>
 	</div>
 );
+
 export default App;
