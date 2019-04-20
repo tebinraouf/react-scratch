@@ -7,6 +7,7 @@ module.exports = {
 	},
 	"automock": false,
 	"setupFiles": [
-		"<rootDir>/src/utils/setupJest.js"
+		"<rootDir>/src/utils/setupJest.js",
+		"<rootDir>/src/utils/enzymeSetup.js"
 	]
 };

@@ -6,8 +6,15 @@ exports[`<Home /> Should render correctly 1`] = `
     Hello Universe!
   </h1>
   <img
+    className="testClass"
     src="test file stub"
     width="200"
   />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Click Me
+  </button>
 </div>
 `;

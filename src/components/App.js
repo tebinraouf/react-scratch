@@ -12,7 +12,7 @@ const App = () => (
 			<main>
 				<Header />
 				<Switch>
-					<Redirect from="/home" to="/" />
+					<Redirect from="/home" to="/"/>
 					<Route exact path="/" component={Home} />
 					<Route path="/about" component={About} />
 					<Route path="/movie/:id?" component={Movie} />
@@ -20,7 +20,6 @@ const App = () => (
 				</Switch>
 			</main>
 		</BrowserRouter>
-	</div>
-);
+	</div>);
 
 export default App;
