@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render correctly 1`] = `
+<div>
+  This is the header.
+  <nav>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Home
+    </a>
+    <a
+      aria-current={null}
+      href="/about"
+      onClick={[Function]}
+    >
+      About
+    </a>
+    <a
+      aria-current={null}
+      href="/movie/0"
+      onClick={[Function]}
+    >
+      Get by URL Parameter
+    </a>
+  </nav>
+</div>
+`;

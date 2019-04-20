@@ -15,7 +15,7 @@ const App = () => (
 					<Redirect from="/home" to="/" />
 					<Route exact path="/" component={Home} />
 					<Route path="/about" component={About} />
-					<Route path="/movie/:id" component={Movie} />
+					<Route path="/movie/:id?" component={Movie} />
 					<Route component={NotFound} />
 				</Switch>
 			</main>
