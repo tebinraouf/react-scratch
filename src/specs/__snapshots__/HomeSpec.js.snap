@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> Should render correctly 1`] = `
+<div>
+  <h1>
+    Hello Universe!
+  </h1>
+  <img
+    src="test file stub"
+    width="200"
+  />
+</div>
+`;
