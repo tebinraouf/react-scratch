@@ -2,8 +2,6 @@ import React from "react";
 import Toronto from "../static/images/toronto.jpg";
 import "../static/styles/home.css";
 
-console.log(process.env.NODE_ENV);
-
 class Home extends React.Component {
 	constructor (props) {
 		super(props);
