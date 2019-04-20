@@ -3,5 +3,6 @@
 exports[`<Movie /> Should render correctly 1`] = `
 <div>
   Hello 
+  0
 </div>
 `;

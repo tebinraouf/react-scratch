@@ -2,14 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Movie = (props) => {
-	const match = props.match === undefined ? {} : props.match;
-	var id = match === undefined ? 0 : match.params;
-
-	if (typeof id === "object") {
-		id = id.id;
+	var id;
+	if (props.match !== undefined) {
+		id = props.match.params.id;
+	} else {
+		id = 0;
 	}
-
-	// const { id } = props.match.params;
 
 	return (
 		<div>
